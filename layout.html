@@ -2,29 +2,32 @@
     @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
    
    /*Global styles*/
-   body {
-       font-family: 'Bangers';
-       background-image: url('https://64.media.tumblr.com/ef81021aaff9358fecac919e31eb7e90/e97ddab143b5a582-f1/s640x960/5ea1480d1ef0ffc7e943803c0442c1e2d083b766.pnj');
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center center;
-       background-attachment: fixed;
-       height:100%;
-       margin: 0;
-       padding: 0;
-       text-align: center;
-       box-shadow: 5px 5px 0 #000;
-   }
-   a {
-       text-decoration: none;
-       color:#ffcc00;
-       transition: all 0.3s ease;
-   }
-   a hover{
-       color:#a8a8a8;
-       text-shadow: 0 0 10px #ffcc00;
-   }
-   
+/*Global styles*/
+body {
+    font-family: 'Bangers', cursive;
+    background-image: url('https://64.media.tumblr.com/ef81021aaff9358fecac919e31eb7e90/e97ddab143b5a582-f1/s640x960/5ea1480d1ef0ffc7e943803c0442c1e2d083b766.pnj');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    box-shadow: 5px 5px 0 #000;
+}
+
+a {
+    text-decoration: none;
+    color: #ffcc00;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #a8a8a8;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
    /*Header Styles*/
    
    header h1{
@@ -58,27 +61,38 @@
        text-shadow: 0 0 10px #ffcc00;
    }
    
-   /*Content*/
-   .container {
-       width: 80%;
-       margin: 0 auto;
-       padding: 20px;
-       background-color: rgba(0, 0, 0, 0.7);
-       border-radius: 50px;
-       color: #f2f2f2;
-       box-shadow: 5px 5px 0 #000;
-       clear:both;
-   }
-   .containerh2{
-       font-family: 'Georgia';
-       font-size: 13em;
-       color:#ba8e08;
-       border-radius: 40px;
-   }
-   .containerp{
-       font-size: 10em;
-       line-height: 1.5;
-   }
+/*Container Styling*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50px;
+    color: #f2f2f2;
+    box-shadow: 5px 5px 0 #000;
+    clear: both;
+}
+
+.container h3 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border: 4px dashed #ffcc00;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #0093cd;
+}
    
    /*Customs section*/
    .custom-section{
