@@ -172,9 +172,7 @@ td {background-color:var(--box_color_and_seethru) !important;border-radius: var(
     padding: 10px;
     vertical-align: top;
 }
-.RightCol, .LeftCol heading{
-	background-color: #a5d3de;
-}
+
 .profile .contact .heading, .profile .table-section .heading, .home-actions .heading {
   background-color: #85c4e7;
 }
@@ -199,16 +197,19 @@ border: var(--borders) !important;
 {   backdrop-filter: blur(0.58px);}
 
 .profile .blurbs{
+        background-size: 55%; /* Ensures the background covers the entire page */
+        background-repeat: repeat; /* Prevents the background from repeating */
+        background-attachment: fixed;/* Keeps the background fixed during scrolling */
 	border-style: dashed;
 	border-width: 4px;
 	border-color: #fff;
-	color: #1e80b4;
+	color: #1e80b4 !important;
 	text-shadow: 0 0 4px #0093cd;
 	background-image: URL("https://th.bing.com/th/id/OIP.Fd4euOMM6LdjR3jopGSrOwHaEi?rs=1&pid=ImgDetMain");
 	
 }
 .profile .blurbs .heading{
-	background-color: #0093cd;
+	background-color: transparent;
 	padding: 2px 7px;
 	color: #fff;
 }
@@ -300,6 +301,8 @@ object-fit: cover!important;
 	<img src="https://th.bing.com/th/id/OIP.8d-zz3fR0iwQdkAv2tajJAAAAA?rs=1&pid=ImgDetMain"/>
 </div>
 <div class="RightCol">
+<img src="https://raining-starss.neocities.org/blnk%20(13).gif"/>
+<img src="https://raining-starss.neocities.org/garfpenis%20(8).gif"/>
 	<div class="yippee">
 	<!-- (c) Layout created by Jack ☂ (https://layouts.spacehey.com/layout?id=106135) -->
 
@@ -328,11 +331,6 @@ object-fit: cover!important;
 	</p>
 	</div>
 </div>
-<div class="who">
-	 <p>
-     Fellow furries, Batfam enjoyers and Dick Grayson connoisseurs.
-     (If you like comics of any kind and any type we should be friends)
-	 </p>
- </div> 
+
 </body>
 </html>
