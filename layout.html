@@ -1,7 +1,28 @@
 <html>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
+:root {
+	primary-color: #0093cd;
+	secondary-color: #e0f7fa;
+	text-color: #1e80b4;
+	--glow-color: #0093cd;
+}
+	
+body{
+	background-color: #e0f7fa;
+	text-shadow: 0 0 5px #0093cd,0 0 10px #0093cd;
+        color:#1e80b4;
+}
+/*Mood*/
+   .mood{
+	  color: #2478af;	   
+   }
+.contact{
+	border: 4px groove #9ed0dc;
+}
+.col w-40 left{
+	transform: translate(0px, 2.3px);
+}
     /*Online img*/
    .online {visibility: hidden;} 
 
@@ -117,6 +138,16 @@
 	content: "▢"
 
 }
+	
+nav{background-color:var(--box_color_and_seethru); !important;border-radius: 0px 0px var(--curve) var(--curve); !important;}
+nav ul{background:none !important;}
+nav img{filter: opacity(80%) !important;}
+nav ul a img, .mood a img{display:none !important;}
+.top{background:none !important;background-color:rgba(0, 0, 0, 0.8); !important;}
+
+nav img.logo{filter: brightness(0) saturate(100%) invert(24%) sepia(20%) saturate(22%) hue-rotate(45deg) brightness(90%) contrast(0%) !important;}
+
+td {background-color:var(--box_color_and_seethru) !important;border-radius: var(--curve) !important;}
     /*profile stuff*/
     /* Profile Image Styling */
 .profile-image img {
@@ -133,32 +164,53 @@
 }
 
    .friends .person img:not(.icon){
-   border: 6px ridge rgb(rgb(233, 186, 77)) !important;   
+   border: 6px ridge #0093cd !important;   
        }
-.RightCol{
+.RightCol, .LeftCol{
     display: table-cell;
     width: 40%;
     padding: 10px;
     vertical-align: top;
 }
-.LeftCol{
- display: table-cell;
- vertical-align: top;
- padding: 10px;
- width: 40%;
+.RightCol, .LeftCol heading{
+	background-color: #a5d3de;
 }
+.profile .contact .heading, .profile .table-section .heading, .home-actions .heading {
+  background-color: #85c4e7;
+}
+.profile .table-section .details-table td {
+  background-color: #4891b8;
+}
+.profile .blurbs .heading, .profile .friends .heading {
+  background-color: #4891b8;
+  color: white;
+}
+ .url-info, .details, .mood, .blog-preview, footer{
+background-color:var(--box_color_and_seethru) !important;
+border-radius: var(--curve) !important;
+padding: 8px !important;
+border: var(--borders) !important;
+
+  /* there's a subtle-ish gradient effect on every box on holmes' page */
+  /* it's disabled here so the root transparency works right */
+  /* background-image: linear-gradient(330deg, rgba(90, 90, 90, 0.1), rgba(60,60,60,0.1), rgba(100, 100, 100, 0.1)) !important; */
+}
+#comments, .blurbs, .blog-preview, .friends, .mood, .contact, .table-section, footer
+{   backdrop-filter: blur(0.58px);}
+
 .profile .blurbs{
-	border-style: Double;
+	border-style: dashed;
 	border-width: 4px;
-	border-color: white;
-	text-shadow: 0 0 4px black;
-	background-image: URL("https://wallpaperaccess.com/full/679029.jpg");
+	border-color: #fff;
+	color: #1e80b4;
+	text-shadow: 0 0 4px #0093cd;
+	background-image: URL("https://th.bing.com/th/id/OIP.Fd4euOMM6LdjR3jopGSrOwHaEi?rs=1&pid=ImgDetMain");
 	
 }
 .profile .blurbs .heading{
-	background-color: red;
+	background-color: #0093cd;
 	padding: 2px 7px;
-	color: white;
+	color: #fff;
 }
 .yippee{
 padding: 8px;
@@ -173,7 +225,11 @@ background: URL('https://th.bing.com/th/id/OIP.kA0zdroZFG8P3dXJ8gMJOgHaEK?rs=1&p
 	margin-bottom: 14px;
 }
 .profile .blurbs .friends{
-	border: 4px Double Blue;
+	background: URL("https://th.bing.com/th/id/OIP.Fd4euOMM6LdjR3jopGSrOwHaEi?rs=1&pid=ImgDetMain");");
+	border: 4px Double #0093cd;
+}
+.profile .h4{
+	color: #1e80b4;
 }
 #vinyl-gallery * {
     all: unset;
@@ -235,75 +291,15 @@ object-fit: cover!important;
     visibility: visible;
   }
 
-<!-- (c) Layout created by Valentine (https://layouts.spacehey.com/layout?id=29048) -->
-
-/* replace with cd image that has transparent background. must be 150px by 150px. */
-:root {
---cd-image: url('https://fluorescent-lights.neocities.org/Digital-CD-Disk-Vector-Transparent-PNG.png');
-}
-.profile-pic {
-position: relative;
-width: 183px;
-filter: drop-shadow(0 0 0.25rem gray);
-}
-.profile-pic:after {
-content: "";
-background: url('https://th.bing.com/th/id/OIP.vRNNPSMwskB1IIEV7DJmnAHaHa?rs=1&pid=ImgDetMain'), linear-gradient(150deg, rgba(255,255,255,0.4), rgba(255,255,255,0.2), 40%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.6));
-background-size: contain, cover;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
-.profile-pic:before {
-content: "";
-background: var(--cd-image);
-position: absolute;
-top: 5px;
-left: -20px;
-width: 150px;
-height: 150px;
-background-repeat: no-repeat;
-z-index: -1;
-animation-name: spin;
-animation-duration: 5000ms;
-animation-iteration-count: infinite;
-animation-timing-function: linear; 
-transition: left ease 0.5s;
-}
-.profile-pic:hover:before {
-left: -75px;
-}
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-.profile-pic .pfp-fallback {
-float: right;
-width: 163px;
-height: 160px;
-border: none;
-}
-.general-about .profile-pic img {
-max-width: inherit;
-}
 </style>
 	
 <body>
 <div class="LeftCol">
-	<h3>Current Comic I'm Reading</h3>
+	<div class="heading">
+	<h4>Current Comic I'm Reading</h4></div>
 	<img src="https://th.bing.com/th/id/OIP.8d-zz3fR0iwQdkAv2tajJAAAAA?rs=1&pid=ImgDetMain"/>
 </div>
 <div class="RightCol">
-	<div class="heading">
-	  <h4>Music!</h4>	
-	</div>
 	<div class="yippee">
 	<!-- (c) Layout created by Jack ☂ (https://layouts.spacehey.com/layout?id=106135) -->
 
