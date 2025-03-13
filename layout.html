@@ -7,6 +7,25 @@ body{
 	text-shadow: 0 0 5px #0093cd,0 0 10px #0093cd;
         color:#1e80b4;
 }
+main{
+	  animation: floating 3s ease-in-out infinite
+}
+<!-- (c) Layout created by remy (https://layouts.spacehey.com/layout?id=27197) -->
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
+}
 /*Mood*/
    .mood{
 	  color: #2478af;	   
@@ -222,6 +241,17 @@ border: var(--borders) !important;
 	background-image: URL("https://th.bing.com/th/id/OIP.Fd4euOMM6LdjR3jopGSrOwHaEi?rs=1&pid=ImgDetMain");
 	
 }
+.profile .blurbs::before{
+	contents:"";
+	positon: absolute;
+	top: -4px;
+	left: -4px;
+	right: -4px;
+	bottom: -4px;
+	border: 4px ridge #ffcc00;
+	z-index: -1;
+	filter: drop-shadow(2px 2px 0 #000), drop-shadow(-2px -2px 0 #000);
+}
 .profile .blurbs .heading{
 	background-color: transparent;
 	padding: 2px 7px;
@@ -247,6 +277,7 @@ background: URL('https://th.bing.com/th/id/OIP.kA0zdroZFG8P3dXJ8gMJOgHaEK?rs=1&p
 .profile .h4{
 	color: #1e80b4;
 }
+
 #vinyl-gallery * {
     all: unset;
   }
