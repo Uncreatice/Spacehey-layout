@@ -1,12 +1,295 @@
 <!--(c) Layout by Uncreatice-->
 <html>
 <style>
+  
   body{
-    background url("");
-    text-shadow: 0 0 5px #000, 0 0 10px #0093cd;
+    background: url("https://cdn.pixabay.com/photo/2023/05/13/23/01/geometric-7991644_1280.png");
+    box-shadow: 0px 0px 5px #000;
+    margin: 10px;
+    border-radius: 6px;
+padding: 5px;
   }
   main{
-     animation: floating 3s ease-in-out infinite;
+    background: transparent;
+    box-shadow: 0px 0px 5px #000;
+    margin: 10px;
+    border-radius: 6px;
+    padding: 5px;
   }
+.blog-preview{
+background-color: #00296B;
+border: 2px ridge #000;
+color: #ffffff;
+text-shadow: ;
+box-shadow: 0px 0px 5px #000;
+border-radius: 6px;
+padding: 5px;
+}
+
+.blurbs{
+background-color: #7d8597;
+box-shadow: 0px 0px 5px #000;
+border: 2px ridge #000;
+border-radius: 6px;
+padding: 5px;
+}
+.blurbs .heading{
+background-image: linear-gradient(#0466c8,#000);
+border-radius: 4px;
+}
+
+.profile .blurbs .section h4{
+opacity: 0%
+}
+
+.url-info{
+
+background-color:#00296B;
+color: #fff;
+border: 2px ridge #000;
+box-shadow: 0px 0px 5px #000;
+
+}
+.url-info b{
+color: #FFD500;
+}
+.friends{
+border: 2px ridge #000;
+background: url('https://tse4.mm.bing.net/th/id/OIP.gGVtPd2_aPOaBx9hkS3uhgHaEU?cb=thvnext&rs=1&pid=ImgDetMain&o=7&rm=3');
+box-shadow: 0px 0px 5px #000;
+border-radius: 6px;
+padding: 5px;
+}
+
+.friends-grid{
+background-color: transparent;
+border: 2px dotted white;
+box-shadow: 0px 0px 5px #000;
+border-radius: 6px;
+padding: 5px;
+}
+.friends-grid a{
+color: #fff;
+}
+.friends img{
+border: 2px ridge #00a6fb;
+border-radius: 6px;
+padding: 20px;
+}
+.profile .friends .heading{
+background-image: linear-gradient(#0466c8, #00a6fb);
+border-radius: 4px;
+border: 2px ridge #fff;
+padding: 5px;
+}
+.contact{
+background-color: rgba(67, 71, 110, 0.8);
+padding: 5px;
+
+}
+.contact .heading{
+background-image: linear-gradient(#0466c8, #00a6fb);
+border-radius: 4px;
+border: 2px ridge #fff;
+}
+.contact a{
+color: white;
+}
+.table-section{
+background-color: #002855;
+padding: 5px;
+border-radius: 6px;
+padding: 5px;
+}
+.table-section heading{
+background-image: linear-gradient(#0466c8, #00a6fb);
+border-radius: 4px;
+border: 2px ridge #fff;
+padding: 5px;
+
+}
+.table-section td{
+background-color: #33415c;
+color: #fff;
+border: 2px inset white;
+margin: 2px;
+border-radius: 6px;
+padding: 5px;
+}
+
+h1{
+color: #fff;
+text-shadow: 2px 5px 4px #00a8e8;
+}
+.general-about{
+color: white;
+}
+.mood{
+background: #00296B;
+border: 2px ridge #000;
+border-radius: 6px;
+padding: 5px;
+
+}
+.mood p{
+color: white;
+}
+.mood a{
+color: white;
+}
+
+  /*NAV BAR*/
+.links{
+background-image: linear-gradient(#0466c8, #00a6fb);
+border: 2px ridge #000;
+margin: 20px;
+border-radius: 6px;
+padding: 5px;
+}
+.links a{
+color: #fff;
+}
+
+.top{
+background: url('https://textures.neocities.org/textures/pattern-and-prints/MACHINE.JPG');
+border-radius: 6px;
+padding: 20px;
+}
+.top .input{
+background-color: #00509d;
+color: #fff;
+}
+.top .button{
+background-color: #00509d;
+color: #fff;
+}
+
+.logout-btn{
+color: #fff;
+}
+
+.logo{
+color: #0466c8;
+}
+  
+    /*Online img*/
+   .online {visibility: hidden;} 
+
+    .online img { 
+
+        content: url("https://vectorseek.com/wp-content/uploads/2023/09/Nightwing-Logo-Vector.svg-.png"); 
+
+        animation-name: none; 
+
+        animation: blink 1s infinite;
+
+        visibility: visible; 
+
+        border: none;
+
+        height: 150px; /* CHANGE HEIGHT OF CUSTOM ONLINE ICON IMAGE */
+
+        width: 160px; /* CHANGE WIDTH OF CUSTOM ONLINE ICON IMAGE */
+
+		display: block;
+
+		margin-left: auto;
+
+		margin-right: auto;
+
+    }
+
+  /*Contacts*/
+
+  .contact img.icon { 
+ display: none; 
+}
+
+
+.contact .f-col>a::before{ 
+ content: " "; 
+ display: inline-block; 
+ width: 15px; 
+ height: 15px; 
+ background-size: 100% 100%;
+} 
+    .contact .inner a img {
+
+    font-size: 0;
+
+}
+
+.contact .inner a img:before {
+
+    font-size: 4em;
+
+    display: block
+
+}
+
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(1) a:before {
+
+	/* Add to Friends */
+
+	content: "💙"
+
+}
+
+.contact .inner .f-row:nth-child(1) .f-col:nth-child(2) a:before {
+
+	/* Add to Favorites */
+
+	content: "✩"
+
+}
+
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(1) a:before {
+
+	/* Send Message */
+
+	content: "➤"
+
+}
+
+.contact .inner .f-row:nth-child(2) .f-col:nth-child(2) a:before {
+
+	/* Forward to Friend */
+
+	content: "➥"
+
+}
+
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(1) a:before {
+
+	/* Instant Message */
+
+	content: "🌩"
+
+}
+
+.contact .inner .f-row:nth-child(3) .f-col:nth-child(2) a:before {
+
+	/* Block User */
+
+	content: "▇"
+
+}
+
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(1) a:before {
+
+	/* Add to Group */
+
+	content: "✚"
+}
+
+.contact .inner .f-row:nth-child(4) .f-col:nth-child(2) a:before {
+
+	/* Report Profile */
+
+	content: "▢"
+
+}
 </style>
+dFWFFWWFAFEFAEFAEFAWWsdfafasdasdasdasda
+
 </html>
