@@ -1,7 +1,50 @@
 <!--(c) Layout by Uncreatice-->
 <html>
+<br/>
+<img src="https://64.media.tumblr.com/ee1d5f315fc7660bc74af2ab2e1a4697/18ca866c5ccbe898-5b/s75x75_c1/6db760f1cc03c042d12da46746658f722503f156.pnj"/>
+<b> 🏳️‍⚧️ Transdude| 19 - DC comics fan/Nightwing Fanatic -Furry <b>
+<img src="https://64.media.tumblr.com/ee1d5f315fc7660bc74af2ab2e1a4697/18ca866c5ccbe898-5b/s75x75_c1/6db760f1cc03c042d12da46746658f722503f156.pnj"/>
+
 <style>
-  
+  /*NAV BAR*/
+
+.top{
+background: none !important;
+border-radius: 6px;
+padding: 20px;
+}
+
+.logo img:hover{
+filter: drop-shadow(0 0 6px #00509d);
+}
+
+.links{
+background-color: transparent;
+border: 2px ridge #000;
+margin: 20px;
+border-radius: 6px;
+padding: 5px;
+}
+.links .heading{
+background-image: linear-gradient(#0466c8, #00a6fb);
+border: 2px ridge #000;
+margin: 20px;
+border-radius: 6px;
+padding: 5px;
+}
+.links a{
+color: #fff;
+}
+.links a:hover{
+color: #01baef;
+text-decoration: underline;
+}
+.links a:visted{
+color: #ffc300;
+}
+
+/*end of nav*/  
+
   body{
     background: url("https://cdn.pixabay.com/photo/2023/05/13/23/01/geometric-7991644_1280.png");
     box-shadow: 0px 0px 5px #000;
@@ -19,7 +62,7 @@ box-shadow: 0px 0px 5px #000;
 border-radius: 6px;
 opacity 1; 
 }
-footer .copyright{
+footer.copyright{
 color: #5adbff;
 }
 
@@ -29,7 +72,24 @@ color: #5adbff;
     margin: 10px;
     border-radius: 6px;
     padding: 5px;
+    animation: floating 3s ease-in-out infinite
   }
+/* (c) Layout created by remy (https://layouts.spacehey.com/layout?id=27197) */
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }
+}
 
 .blog-preview{
 background-color: #00296B;
@@ -39,6 +99,18 @@ text-shadow: ;
 box-shadow: 0px 0px 5px #000;
 border-radius: 6px;
 padding: 5px;
+}
+.blog-preview a{
+color: white;
+font-weight: bold;
+text-decoration: none;
+}
+.blog-preview a:hover{
+color: #01baef;
+text-decoration: underline;
+}
+.blog-preview a:visted{
+color: #ffc300;
 }
 
 .blurbs{
@@ -56,6 +128,8 @@ border: 2px ridge #fff;
 padding: 5px;
 color: white;
 }
+
+
 .profile .blurbs .section h4{
 background-color: rgba(0, 0, 0, 0.21);
 color: white;
@@ -105,8 +179,50 @@ border: 2px ridge #fff;
 padding: 5px;
 color: white;
 }
+.friends a{
+color: white;
+}
+.friends a:hover{
+color: #01baef;
+text-decoration: underline;
+}
+.friends a:visted{
+color: #ffc300;
+}
+
+.count{
+color: #01baef;
+font-weight: bold;
+}
+
 .comments-table{
 background-color: rgba(0, 0, 0, 0.21);
+border-radius: 4px;
+border: 2px ridge #fff;
+padding: 5px;
+color: white;
+}
+.comments-table td{
+background-color: rgba(0, 0, 0, 0.21);
+padding: 10px;
+border-top: 2px ridge #01baef;
+}
+.comments-table td:nth-child(1){
+background-color: rgba(49, 110, 254, 0.29);
+padding: 10px;
+border-top: 2px ridge #01baef;
+}
+.comments-table a{
+color: white;
+font-weight: bold;
+text-decoration: none;
+}
+.comments-table a:hover{
+color: #01baef;
+text-decoration: underline;
+}
+.comments-table a:visted{
+color: #ffc300;
 }
 
 .contact{
@@ -114,7 +230,7 @@ background-color: rgba(67, 71, 110, 0.8);
 padding: 5px;
 
 }
-.contact .heading{
+.profile .contact .heading{
 background-image: linear-gradient(#0466c8, #00a6fb);
 border-radius: 4px;
 border: 2px ridge #fff;
@@ -123,13 +239,14 @@ border: 2px ridge #fff;
 color: white;
 }
 
-.table-section{
-background-color: #002855;
+.profile .table-section{
+background-color: rgba(0, 0, 0, 0.21);
 padding: 5px;
+border: 2px ridge #fff;
 border-radius: 6px;
 padding: 5px;
 }
-.table-section heading{
+.profile .table-section .heading{
 background-image: linear-gradient(#0466c8, #00a6fb);
 border-radius: 4px;
 border: 2px ridge #fff;
@@ -144,8 +261,10 @@ margin: 2px;
 border-radius: 6px;
 padding: 5px;
 }
-table.details-table{
-background-color: rgba(0, 0, 0, 0.5);
+.profile .details-table td:first-child{
+background-image: linear-gradient(#0466c8, #00a6fb);
+color: white;
+font-weight: bold;
 }
 
 h1{
@@ -169,44 +288,7 @@ color: white;
 color: white;
 }
 
-  /*NAV BAR*/
-.links{
-background-image: linear-gradient(#0466c8, #00a6fb);
-border: 2px ridge #000;
-margin: 20px;
-border-radius: 6px;
-padding: 5px;
-}
-.links a{
-color: #fff;
-}
 
-.top{
-background: transparent;
-border-radius: 6px;
-padding: 20px;
-}
-.top .input{
-background-color: #00509d;
-color: #fff;
-}
-.top .button{
-background-color: #00509d;
-color: #fff;
-}
-.logo{
-<a href="https://spacehey.com/home"></a>
-}
-
-.logout-btn{
-color: #fff;
-}
-
-/*END OF NAV*/
-
-.logo{
-color: #0466c8;
-}
   
     /*Online img*/
    .online {visibility: hidden;} 
@@ -325,8 +407,137 @@ color: #0466c8;
 	content: "▢"
 
 }
-<!--(c) Layout by Uncreatice-->
+/*(c) Layout by Uncreatice*/
+#vinyl-gallery * {
+    all: unset;
+  }
+ 
+  #vinyl-gallery {
+    all: initial!important;
+    width: 100%!important;
+    height: 230px!important;
+    margin: 30px 0!important;
+    display: flex!important;
+    flex-direction: row!important;
+    position: relative!important;
+    margin-left: -6px!important;
+  }
+ 
+  #vinyl-gallery .vinyl {
+      all:unset!important;
+    perspective: 500px !important;
+    width: 18px!important;
+    transition: width 0.5s!important;
+  }
+ 
+  #vinyl-gallery .vinyl:hover {
+    width: 148px!important;
+  }
+ 
+  #vinyl-gallery img {
+      all:unset!important;
+    transition: transform 0.5s, width 0.5s, height 0.5s, margin-top 0.5s!important;
+    width: 180px!important;
+    height: 180px!important;
+    transform: rotateX(0deg) rotateY(25deg)!important;
+    transform-style: preserve-3d!important;
+    border-radius: 4px!important;
+    border: 2px solid rgba(0, 0, 0, 0.1)!important;
+object-fit: cover!important;
+  }
+ 
+  #vinyl-gallery .vinyl:hover img {
+    transform: rotateX(0deg) rotateY(10deg)!important;
+    width: 188px!important;
+    height: 188px!important;
+    margin-top: -2px!important;
+  }
+ 
+  #vinyl-gallery .title {
+    color: #000000;
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 100%;
+    padding-left: 6px;
+  }
+ 
+  #vinyl-gallery .vinyl:nth-child(n):hover + .title {
+    visibility: visible;
+  }
+
+/* (c) Layout created by 🌈☆ ˚˖ (๑òᆺó๑) ˖ ˚ ☆🌸 (https://layouts.spacehey.com/layout?id=37567) */
 </style>
-dFWFFWWFAFEFAEFAEFAWWsdfafasdasdasdasda
+
+<style>html:before {
+  animation: grain 8s steps(10) infinite;
+  background-image: url(https://media.discordapp.net/attachments/1129082383073824788/1137360648821538876/786b01f22de3ef61b52c17fa468fff34.gif?width=300&height=360);
+  content: "";
+  height: 300%;
+  left: -50%;
+  opacity:.2;
+  position: fixed;
+  top: -110%;
+  width: 300%;
+  pointer-events:none;
+}
+@keyframes grain 
+  70% { transform:translate(0%, 15%); }
+}
+</style>
+
+</style>	
+	
+<!-- (c) Layout created by 🩻 xXjellyfishl0vrXx 🪼 (https://layouts.spacehey.com/layout?id=88620) -->
+<div style="float:  ; max-width: 900px; height: auto; position: absolute; left: 699px; top: 145px; z-index: 200;"><a href="https://www.youtube.com/watch?v=IGXS45Gp8jA"><img src="https://99gifshop.neocities.org/items/new/smile.gif" alt="smiley"/></a></div>
+
+
+<div style="float:  ; max-width: 900px; height: auto; position: absolute; left: 659px; top: 1px; z-index: 200;"><a href="https://www.youtube.com/watch?v=poa_QBvtIBA"><img src="https://media.tenor.com/3GmqPXsprRoAAAAj/cirno-flying.gif" alt="Cirno"/></a></div>
+
+<div style="float:  ; max-width: 150px; height: 200px; position: absolute; left: 519px; top: 141px; z-index: 200;"><a href="https://www.youtube.com/watch?v=poa_QBvtIBA"><img src="https://media.tenor.com/vKgc8KF5ISgAAAAi/touhou-reimu-hakurei.gif" alt="Reimu"/></a></div>
+
+
+<br>
+<img src="https://raining-starss.neocities.org/blnk%20(13).gif"/>
+<img src="https://64.media.tumblr.com/cb120da7e99cd6db91ae578dfbc59474/18ca866c5ccbe898-5b/s250x400/8b62e54147c9a70a2f2cfceaa370b4d52ce5a068.pnj"/>
+<img src="https://raining-starss.neocities.org/garfpenis%20(8).gif"/>
+<a href="http://blinki.es/other"><img src="http://blinki.es/blinkies/other/sha-zam.gif" alt="Other blinkies" ></a>	
+<a href="http://blinki.es/tech"><img src="http://blinki.es/blinkies/tech/born-to-surf-the-net.gif" alt="Tech blinkies" ></a>
+<a href="http://blinki.es/tech"><img src="http://blinki.es/blinkies/tech/i-hate-popups.gif" alt="Tech blinkies" ></a>
+<a href="http://blinki.es/tech"><img src="http://blinki.es/blinkies/tech/computer-geek.gif" alt="Tech blinkies" ></a>
+<a href="https://rainbow-butterfly-knife.tumblr.com/stamps"><img src="https://64.media.tumblr.com/f6f854d0f69ca4664de065de1542dc94/tumblr_inline_pcjgdawteA1vss73l_250.gif"></a>
+
+<!-- (c) Layout created by Jack ☂ (https://layouts.spacehey.com/layout?id=106135) -->
+
+<!----- VINYL VINYL VINYL VINYL ---->
+<div id="vinyl-gallery">
+  <div class="vinyl">
+    <img src="https://th.bing.com/th/id/OIP.6AQUwYEY3KvL60OdEVRi9wHaHa?rs=1&pid=ImgDetMain"/>
+  </div>
+  <div class="title">Good Kid - 
+	  Good Kid 2</div>
+
+  <div class="vinyl">
+    <img src="https://th.bing.com/th/id/OIP.qLBTZcUugj3ciJxgkDZlBQHaHa?rs=1&pid=ImgDetMain"/>
+  </div>
+  <div class="title">Atomic Treehouse - Atomic Treehouse</div>
+
+  <div class="vinyl">
+    <img src="https://images.genius.com/c2c1bfb12699542db711553eefc5d8e2.340x340x1.png"/>
+  </div>
+  <div class="title">Inoha- Naomi</div>
+
+  <div class="vinyl">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ae/37/a2/ae37a289-6b57-f0a0-d57b-decd92cad6b6/075679652515.jpg/1200x1200bf-60.jpg"/>
+  </div>
+  <div class="title">Wallows - Model</div>
+	
+	</div>
+</div>
+ 
+</b></b>
 
 </html>
+
